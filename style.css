@@ -28,3 +28,12 @@ h1, h2 {
 ul {
   margin-top: 10px;
 }
+
+.logo-background {
+  width: 100%;
+  height: calc(100vh - 80px); /* ajuste selon ton header */
+  background-image: url("mathieudob8.jpg"); /* ⚠️ mets le vrai nom */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
