@@ -5,13 +5,9 @@ function showPage(page) {
     content.innerHTML = "<h1>Bienvenue sur Rift FA</h1><p>Choisissez une section.</p>";
   }
 
-  if (page === "general") {
-    content.innerHTML = "<h1>Règlement Général</h1><p>Règlement complet intégré.</p>";
-  }
-
-  if (page === "streamer") {
-    content.innerHTML = "<h1>Règlement Streamer</h1><p>Respectez les règles de streaming.</p>";
-  }
+  if (page === "general" || page === "streamer") {
+  content.innerHTML = `<div class="logo-background"></div>`;
+}
 
   if (page === "lspd") {
     content.innerHTML = "<h1>LSPD / Sheriff</h1><p>Règlement police.</p>";
