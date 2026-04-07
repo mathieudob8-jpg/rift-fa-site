@@ -1,0 +1,30 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #05070c;
+  color: white;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 30px;
+  background: #0d1017;
+}
+nav a {
+  margin-left: 15px;
+  color: white;
+  text-decoration: none;
+}
+main {
+  padding: 30px;
+}
+.section {
+  margin-bottom: 30px;
+}
+h1, h2 {
+  border-bottom: 1px solid #444;
+  padding-bottom: 5px;
+}
+ul {
+  margin-top: 10px;
+}
