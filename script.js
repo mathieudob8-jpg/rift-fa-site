@@ -3,47 +3,68 @@ function showPage(page) {
 
   if (page === "home") {
     content.innerHTML = `
-      <div class="page">
-        <h1>Bienvenue sur Rift FA</h1>
-        <p>Choisissez une section.</p>
-      </div>
+      <section class="hero">
+        <div class="hero-overlay">
+          <button class="hero-title">REGLEMENT</button>
+
+          <div class="card-grid">
+            <div class="card" onclick="showPage('general')">
+              <img src="meteor-logo-rift-roleplay-wbgd.png" alt="Général">
+              <span>Général</span>
+            </div>
+
+            <div class="card" onclick="showPage('lspd')">
+              <img src="meteor-logo-rift-roleplay-green.png" alt="Légal">
+              <span>Légal</span>
+            </div>
+
+            <div class="card" onclick="showPage('illegal')">
+              <img src="meteor-logo-rift-roleplay-red.png" alt="Illégal">
+              <span>Illégal</span>
+            </div>
+          </div>
+        </div>
+      </section>
     `;
   } else if (page === "general") {
     content.innerHTML = `
-      <div class="page">
-        <img class="banner" src="meteor-logo-rift-roleplay-bgd.png" alt="Bannière Rift FA">
-        <h1>Règlement Général</h1>
-        <p>Ici tu pourras mettre tout le règlement général.</p>
-      </div>
+      <section class="subpage">
+        <div class="subpage-hero">
+          <button class="hero-title">Règlement Général</button>
+        </div>
+      </section>
     `;
   } else if (page === "streamer") {
     content.innerHTML = `
-      <div class="page">
-        <img class="banner" src="meteor-logo-rift-roleplay-bgd.png" alt="Bannière Streamer">
-        <h1>Règlement Streamer</h1>
-        <p>Ici tu pourras mettre les règles stream.</p>
-      </div>
+      <section class="subpage">
+        <div class="subpage-hero">
+          <button class="hero-title">Règlement Streamer</button>
+        </div>
+      </section>
     `;
   } else if (page === "lspd") {
     content.innerHTML = `
-      <div class="page">
-        <h1>LSPD / Sheriff</h1>
-        <p>Règlement police.</p>
-      </div>
+      <section class="subpage">
+        <div class="subpage-hero">
+          <button class="hero-title">Services Publique</button>
+        </div>
+      </section>
     `;
   } else if (page === "ems") {
     content.innerHTML = `
-      <div class="page">
-        <h1>EMS</h1>
-        <p>Règlement médical.</p>
-      </div>
+      <section class="subpage">
+        <div class="subpage-hero">
+          <button class="hero-title">Immobilier</button>
+        </div>
+      </section>
     `;
   } else if (page === "illegal") {
     content.innerHTML = `
-      <div class="page">
-        <h1>Illégal</h1>
-        <p>Contenu à venir...</p>
-      </div>
+      <section class="subpage">
+        <div class="subpage-hero">
+          <button class="hero-title">Illégal</button>
+        </div>
+      </section>
     `;
   }
 }
