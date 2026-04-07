@@ -7,15 +7,21 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header class="header">
-    <div class="logo">Règlement Rift FA</div>
-    <nav>
-      <a href="#" onclick="showPage('home')">Accueil</a>
-      <a href="#" onclick="showPage('general')">Général</a>
-      <a href="#" onclick="showPage('streamer')">Streamer</a>
-      <a href="#" onclick="showPage('lspd')">LSPD</a>
-      <a href="#" onclick="showPage('ems')">EMS</a>
-      <a href="#" onclick="showPage('illegal')">Illégal</a>
+  <header class="topbar">
+    <div class="brand">Règlement Rift FA</div>
+
+    <nav class="nav">
+      <a href="javascript:void(0)" onclick="showPage('home')">Accueil</a>
+      <div class="dropdown">
+        <button class="dropbtn">Général ▾</button>
+        <div class="dropdown-content">
+          <a href="javascript:void(0)" onclick="showPage('general')">Entreprise</a>
+          <a href="javascript:void(0)" onclick="showPage('lspd')">Services Publique</a>
+          <a href="javascript:void(0)" onclick="showPage('ems')">Immobilier</a>
+        </div>
+      </div>
+      <a href="javascript:void(0)" onclick="showPage('streamer')">Streamer</a>
+      <a href="javascript:void(0)" onclick="showPage('illegal')">Illégal</a>
     </nav>
   </header>
 
