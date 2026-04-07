@@ -29,9 +29,10 @@ body {
   color: white;
 }
 
-.logo-background {
-  background-image: url("meteor-logo-rift-roleplay-main.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 350px;
+.banner {
+  display: block;
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto 30px auto;
+  border-radius: 12px;
 }
