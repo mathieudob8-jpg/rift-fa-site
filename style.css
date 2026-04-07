@@ -31,8 +31,8 @@ ul {
 
 .logo-background {
   width: 100%;
-  height: calc(100vh - 80px); /* ajuste selon ton header */
-  background-image: url("mathieudob8.jpg"); /* ⚠️ mets le vrai nom */
+  height: calc(100vh - 80px);
+  background-image: url("meteor-logo-rift-roleplay-main.png.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
